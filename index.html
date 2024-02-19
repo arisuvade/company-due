@@ -5,48 +5,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Due</title>
     <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8f8f8;
+        margin: 0;
+        padding: 0;
+        margin-bottom: 5%;
+      }
+
       h1 {
         text-align: center;
+        color: #6c5ce7;
+        margin-top: 30px;
+        margin-bottom: 30px;
       }
 
       label {
-        font-size: 24px;
+        font-size: 18px;
         font-weight: bold;
+        color: #555;
+        padding-left: 5%;
+        margin-bottom: 10px;
       }
 
-      #department-selection {
-        font-family: Arial, sans-serif;
+      select {
         font-size: 16px;
         padding: 8px;
         border-radius: 5px;
         border: 1px solid #ccc;
-        width: 200px;
         margin-bottom: 20px;
+        color: #444;
+        display: inline-block;
+      }
+
+      #group-info {
+        background-color: #f8f8f8;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+      }
+
+      h2 {
+        color: #6c5ce7;
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      li {
+        margin-bottom: 10px;
+        color: #333;
+        font-size: 20px;
       }
 
       table {
         border-collapse: collapse;
-        border: 2px solid #000000;
+        border: 2px solid #6c5ce7;
         font-family: Arial, sans-serif;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
+        background-color: #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
 
-      /* Employee Name, etc... */
       table th {
-        padding: 18px;
-        font-size: 24px;
-        color: #f320b7;
-        background-color: #f0f0f0;
-        border: 3px solid #9a6e6e;
+        padding: 14px;
+        font-size: 16px;
+        color: #fff;
+        background-color: #6c5ce7;
+        border: 1px solid #6c5ce7;
+        text-align: left;
       }
 
-      /* Data */
       table td {
         padding: 10px;
-        font-size: 18px;
-        color: #0e27e1;
-        text-align: left;
-        border: 3px solid #9a6e6e;
+        font-size: 14px;
+        color: #333;
+        border: 1px solid #ddd;
       }
     </style>
   </head>
@@ -55,7 +95,8 @@
 
     <label for="department-selection">Department:</label>
     <select id="department-selection">
-      <option value="all">All</option>
+      <option style="display: none">Choose Department</option>
+      <option value="all">All Departments</option>
       <option value="central supply">Central Supply</option>
       <option value="security">Security</option>
       <option value="laboratory">Laboratory</option>
@@ -70,6 +111,16 @@
       <option value="canteen">Canteen</option>
       <option value="information">Information</option>
     </select>
+
+    <div id="group-info">
+      <h2>GROUP CATERPILLARS</h2>
+      <ul>
+        <li>Kristian Lloyd Hernandez</li>
+        <li>Justine Mendoza</li>
+        <li>Daniel Gutierrez</li>
+        <li>Aries Dave Bautista</li>
+      </ul>
+    </div>
 
     <table id="company"></table>
 
@@ -88,19 +139,28 @@
       function fillTable(xml, department) {
         var i;
         var xmlDoc = xml.responseXML;
-        var table =
-          "<tr><th>Employee Name</th><th>Department</th>" +
-          "<th>Due Date</th><th>Amount</th></tr>";
+        var table = "";
         var x = xmlDoc.getElementsByTagName("record");
+
         for (i = 0; i < x.length; i++) {
           var recordDepartment = x[i]
             .getElementsByTagName("department")[0]
             .childNodes[0].nodeValue.toLowerCase();
 
           if (
-            department.toLowerCase() === "all" ||
-            recordDepartment === department.toLowerCase()
+            department &&
+            (department === "all" ||
+              recordDepartment === department.toLowerCase())
           ) {
+            //  Hide group info
+            document.getElementById("group-info").style.display = "none";
+
+            if (table === "") {
+              table +=
+                "<tr><th>Employee Name</th><th>Department</th>" +
+                "<th>Due Date</th><th>Amount</th></tr>";
+            }
+
             table +=
               "<tr><td>" +
               x[i].getElementsByTagName("employeename")[0].childNodes[0]
@@ -115,16 +175,12 @@
               "</td></tr>";
           }
         }
+
         document.getElementById("company").innerHTML = table;
+        document.getElementById("department-selection").onchange = function () {
+          getDues(this.value);
+        };
       }
-
-      // Set the default to "all"
-      getDues("all");
-
-      // Add event listener for department selection changes
-      document.getElementById("department-selection").onchange = function () {
-        getDues(this.value); // Load data based on the selected department
-      };
     </script>
   </body>
 </html>
