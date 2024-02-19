@@ -1,0 +1,38 @@
+h1 {
+  text-align: center;
+}
+
+#department-selection {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  margin-bottom: 20px; /* Add space below the select dropdown */
+}
+
+label {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid #000000;
+  font-family: Seri, sans-serif;
+  width: 100%;
+}
+
+table th,
+table td {
+  padding: 10px;
+  font-size: 18px;
+  color: #2d3caf;
+  text-align: left;
+  border: 1px solid #000000;
+}
+
+table th {
+  background-color: #f0f0f0;
+}

@@ -1,0 +1,875 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data>
+  <columns>
+    <amount index="4">amount</amount>
+    <department index="2">department</department>
+    <duedate index="3">duedate</duedate>
+    <employeename index="1">employeename</employeename>
+  </columns>
+  <records>
+    <record index="1">
+      <amount> 2,428.20 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>ABLAZA, JERIC</employeename>
+    </record>
+    <record index="2">
+      <amount> 3,216.15 </amount>
+      <department>Central Supply</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>ADRIANO, ANNE LORRAINE O.</employeename>
+    </record>
+    <record index="3">
+      <amount> 1,917.90 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>ADRIANO, NOREEN, T.</employeename>
+    </record>
+    <record index="4">
+      <amount> 1,689.30 </amount>
+      <department>Emergency</department>
+      <duedate>February 03, 2024</duedate>
+      <employeename>AGUILAR, MARYJANE, F.</employeename>
+    </record>
+    <record index="5">
+      <amount> 362.25 </amount>
+      <department>OPD</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>ALFONSO, AERON C.</employeename>
+    </record>
+    <record index="6">
+      <amount> 92.70 </amount>
+      <department>Linen</department>
+      <duedate>February 24, 2024</duedate>
+      <employeename>ALFONSO, ALYSSA DEVINE, A.</employeename>
+    </record>
+    <record index="7">
+      <amount> 2,413.80 </amount>
+      <department>Linen</department>
+      <duedate>February 16, 2024</duedate>
+      <employeename>ALMAZAN, JIMPHINE, R</employeename>
+    </record>
+    <record index="8">
+      <amount> 3,541.50 </amount>
+      <department>Emergency</department>
+      <duedate>February 20, 2024</duedate>
+      <employeename>ANGELICA VERAGUAS</employeename>
+    </record>
+    <record index="9">
+      <amount> 3,837.60 </amount>
+      <department>OPD</department>
+      <duedate>February 23, 2024</duedate>
+      <employeename>ANGELINE VILLARAMA</employeename>
+    </record>
+    <record index="10">
+      <amount> 790.20 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>ANGELO PATAWARAN</employeename>
+    </record>
+    <record index="11">
+      <amount> 2,583.90 </amount>
+      <department>Information</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>ANGELOU MURILLO</employeename>
+    </record>
+    <record index="12">
+      <amount> 3,067.65 </amount>
+      <department>Emergency</department>
+      <duedate>February 15, 2024</duedate>
+      <employeename>ARTHUR KYLE JULINN SALCEDO</employeename>
+    </record>
+    <record index="13">
+      <amount> 4,416.30 </amount>
+      <department>Information</department>
+      <duedate>February 20, 2024</duedate>
+      <employeename>AUSTRIA, JONABELLE, C.</employeename>
+    </record>
+    <record index="14">
+      <amount> 2,074.05 </amount>
+      <department>Emergency</department>
+      <duedate>February 25, 2024</duedate>
+      <employeename>BARBARONA, CARLO R.</employeename>
+    </record>
+    <record index="15">
+      <amount> 3,564.90 </amount>
+      <department>OPD</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>BARCIA, HEDILYN</employeename>
+    </record>
+    <record index="16">
+      <amount> 1,793.70 </amount>
+      <department>Central Supply</department>
+      <duedate>February 17, 2024</duedate>
+      <employeename>BASBAS, AILLA MARIE R.</employeename>
+    </record>
+    <record index="17">
+      <amount> 472.50 </amount>
+      <department>OPD</department>
+      <duedate>February 19, 2024</duedate>
+      <employeename>BAUTISTA, MARRY ROSE, G.</employeename>
+    </record>
+    <record index="18">
+      <amount> 3,180.15 </amount>
+      <department>Linen</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>BAUTISTA, ROCHELL ANN V.</employeename>
+    </record>
+    <record index="19">
+      <amount> 3,144.60 </amount>
+      <department>Security</department>
+      <duedate>February 03, 2024</duedate>
+      <employeename>BEA JOY CANO</employeename>
+    </record>
+    <record index="20">
+      <amount> 1,278.00 </amount>
+      <department>Emergency</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>BERMUDEZ, JERONALYN C.</employeename>
+    </record>
+    <record index="21">
+      <amount> 3,846.60 </amount>
+      <department>Accounting</department>
+      <duedate>February 27, 2024</duedate>
+      <employeename>BERNABE, GLYZZA S.</employeename>
+    </record>
+    <record index="22">
+      <amount> 3,267.90 </amount>
+      <department>Central Supply</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>BEROLYN SAGUN</employeename>
+    </record>
+    <record index="23">
+      <amount> 238.05 </amount>
+      <department>Information</department>
+      <duedate>February 10, 2024</duedate>
+      <employeename>CAMILE RODRIGO</employeename>
+    </record>
+    <record index="24">
+      <amount> 2,352.15 </amount>
+      <department>Accounting</department>
+      <duedate>February 19, 2024</duedate>
+      <employeename>CARLOS, RICHARD, L</employeename>
+    </record>
+    <record index="25">
+      <amount> 4,069.35 </amount>
+      <department>MIS</department>
+      <duedate>February 01, 2024</duedate>
+      <employeename>CASTRO, AERIEL, DL.</employeename>
+    </record>
+    <record index="26">
+      <amount> 3,244.05 </amount>
+      <department>Central Supply</department>
+      <duedate>February 26, 2024</duedate>
+      <employeename>CASTRO, MARIBEL A.</employeename>
+    </record>
+    <record index="27">
+      <amount> 1,882.80 </amount>
+      <department>Accounting</department>
+      <duedate>February 02, 2024</duedate>
+      <employeename>CASTRO,CHARMANE B.</employeename>
+    </record>
+    <record index="28">
+      <amount> 3,905.55 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 17, 2024</duedate>
+      <employeename>CAUDAL, RENIELYN, C.</employeename>
+    </record>
+    <record index="29">
+      <amount> 2,263.05 </amount>
+      <department>Linen</department>
+      <duedate>February 03, 2024</duedate>
+      <employeename>CENTENO, MARRIEL MAE H.</employeename>
+    </record>
+    <record index="30">
+      <amount> 3,004.65 </amount>
+      <department>Laboratory</department>
+      <duedate>February 22, 2024</duedate>
+      <employeename>CHARMAINE SALAS</employeename>
+    </record>
+    <record index="31">
+      <amount> 1,845.90 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 23, 2024</duedate>
+      <employeename>CINDY LADYLYN JAVIER</employeename>
+    </record>
+    <record index="32">
+      <amount> 547.65 </amount>
+      <department>Radiology</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>CRISTINE MERCADO</employeename>
+    </record>
+    <record index="33">
+      <amount> 379.80 </amount>
+      <department>Therapy</department>
+      <duedate>February 23, 2024</duedate>
+      <employeename>CRUZ, HANNA ALLAYSA C</employeename>
+    </record>
+    <record index="34">
+      <amount> 1,424.70 </amount>
+      <department>Linen</department>
+      <duedate>February 01, 2024</duedate>
+      <employeename>CRUZ, JOHN RENZO S.</employeename>
+    </record>
+    <record index="35">
+      <amount> 2,115.00 </amount>
+      <department>Radiology</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>CRUZ, VINJANE DE JESUS</employeename>
+    </record>
+    <record index="36">
+      <amount> 4,042.35 </amount>
+      <department>Radiology</department>
+      <duedate>February 20, 2024</duedate>
+      <employeename>CRUZ,MA.JHUROSE,C.</employeename>
+    </record>
+    <record index="37">
+      <amount> 1,632.15 </amount>
+      <department>Radiology</department>
+      <duedate>February 17, 2024</duedate>
+      <employeename>DAGUYIN, PAULYN D. C.</employeename>
+    </record>
+    <record index="38">
+      <amount> 1,823.40 </amount>
+      <department>Radiology</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>DANA DUTERTE</employeename>
+    </record>
+    <record index="39">
+      <amount> 3,325.05 </amount>
+      <department>MIS</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>DANDAN, GLADY MIR, E.</employeename>
+    </record>
+    <record index="40">
+      <amount> 1,121.40 </amount>
+      <department>MIS</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>DE GUZMAN, CLARK JOHN E.</employeename>
+    </record>
+    <record index="41">
+      <amount> 1,882.35 </amount>
+      <department>Accounting</department>
+      <duedate>February 21, 2024</duedate>
+      <employeename>DE VERA, KYLA ALYZA, TALAVERA</employeename>
+    </record>
+    <record index="42">
+      <amount> 1,377.90 </amount>
+      <department>MIS</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>DEL ROSARIO, DANICA FAYE C.</employeename>
+    </record>
+    <record index="43">
+      <amount> 2,172.15 </amount>
+      <department>Security</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>DELA CRUZ JAKE LOUIS AVENUE</employeename>
+    </record>
+    <record index="44">
+      <amount> 4,278.60 </amount>
+      <department>Radiology</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>DELA CRUZ, EDLIZ KATE, E.</employeename>
+    </record>
+    <record index="45">
+      <amount> 3,883.95 </amount>
+      <department>Information</department>
+      <duedate>February 04, 2024</duedate>
+      <employeename>DELA CRUZ, EVE MAY R.</employeename>
+    </record>
+    <record index="46">
+      <amount> 4,387.50 </amount>
+      <department>OPD</department>
+      <duedate>February 17, 2024</duedate>
+      <employeename>DELA PAZ VIENNE ALLEN TIMOTHY C.</employeename>
+    </record>
+    <record index="47">
+      <amount> 1,118.25 </amount>
+      <department>Information</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>DELA TORRE, NEUMELYN, G</employeename>
+    </record>
+    <record index="48">
+      <amount> 461.25 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 10, 2024</duedate>
+      <employeename>DENUM,IRISH,ORLINA</employeename>
+    </record>
+    <record index="49">
+      <amount> 2,333.25 </amount>
+      <department>MIS</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>EDMARC OLVIDA</employeename>
+    </record>
+    <record index="50">
+      <amount> 650.25 </amount>
+      <department>Central Supply</department>
+      <duedate>February 24, 2024</duedate>
+      <employeename>ELOISA POLINTAN</employeename>
+    </record>
+    <record index="51">
+      <amount> 1,690.65 </amount>
+      <department>Accounting</department>
+      <duedate>February 08, 2024</duedate>
+      <employeename>ELYZA MARIE MARTINEZ</employeename>
+    </record>
+    <record index="52">
+      <amount> 4,169.70 </amount>
+      <department>Therapy</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>ERWIN QUIAMBAO</employeename>
+    </record>
+    <record index="53">
+      <amount> 2,293.20 </amount>
+      <department>Linen</department>
+      <duedate>February 01, 2024</duedate>
+      <employeename>ESTRADA, ERICKA S.</employeename>
+    </record>
+    <record index="54">
+      <amount> 3,026.25 </amount>
+      <department>Radiology</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>EVANGELISTA, JOMELYN, B.</employeename>
+    </record>
+    <record index="55">
+      <amount> 308.70 </amount>
+      <department>Radiology</department>
+      <duedate>February 21, 2024</duedate>
+      <employeename>FERNANDO, ABBYGAIL P</employeename>
+    </record>
+    <record index="56">
+      <amount> 3,104.10 </amount>
+      <department>Information</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>FLORES, MA. LOUISE NICOLE, M.</employeename>
+    </record>
+    <record index="57">
+      <amount> 2,438.55 </amount>
+      <department>Radiology</department>
+      <duedate>February 26, 2024</duedate>
+      <employeename>FRAGA, MA. BEVERLY B.</employeename>
+    </record>
+    <record index="58">
+      <amount> 1,273.50 </amount>
+      <department>Information</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>FRANCISCO, DIANE PAULINE A.</employeename>
+    </record>
+    <record index="59">
+      <amount> 1,948.95 </amount>
+      <department>Accounting</department>
+      <duedate>February 16, 2024</duedate>
+      <employeename>FRANCISCO, MICAELLA M.</employeename>
+    </record>
+    <record index="60">
+      <amount> 67.95 </amount>
+      <department>OPD</department>
+      <duedate>February 16, 2024</duedate>
+      <employeename>GERALDEZ, ANGELICA G</employeename>
+    </record>
+    <record index="61">
+      <amount> 418.95 </amount>
+      <department>Emergency</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>GONZALES, MAY ANGELIQUE S.</employeename>
+    </record>
+    <record index="62">
+      <amount> 775.35 </amount>
+      <department>Emergency</department>
+      <duedate>February 18, 2024</duedate>
+      <employeename>GREGORIO RUSTOM B.</employeename>
+    </record>
+    <record index="63">
+      <amount> 1,182.15 </amount>
+      <department>Linen</department>
+      <duedate>February 15, 2024</duedate>
+      <employeename>HAIZEL VALDESANCHO</employeename>
+    </record>
+    <record index="64">
+      <amount> 923.85 </amount>
+      <department>MIS</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>HANIZEL FRAGO</employeename>
+    </record>
+    <record index="65">
+      <amount> 3,169.35 </amount>
+      <department>Information</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>HAROLD SANTOS</employeename>
+    </record>
+    <record index="66">
+      <amount> 694.35 </amount>
+      <department>Accounting</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>HAZ, JOVELITA F.</employeename>
+    </record>
+    <record index="67">
+      <amount> 287.10 </amount>
+      <department>Central Supply</department>
+      <duedate>February 16, 2024</duedate>
+      <employeename>HERNANDEZ DANIELA YABUT</employeename>
+    </record>
+    <record index="68">
+      <amount> 1,727.10 </amount>
+      <department>Information</department>
+      <duedate>February 17, 2024</duedate>
+      <employeename>HERNANDEZ, ROSEMARIE DG.</employeename>
+    </record>
+    <record index="69">
+      <amount> 3,459.60 </amount>
+      <department>OPD</department>
+      <duedate>February 02, 2024</duedate>
+      <employeename>HIPOLITO, ROY ALLAN, A.</employeename>
+    </record>
+    <record index="70">
+      <amount> 184.50 </amount>
+      <department>Information</department>
+      <duedate>February 19, 2024</duedate>
+      <employeename>IBARRA GENE MAR G.</employeename>
+    </record>
+    <record index="71">
+      <amount> 2,842.20 </amount>
+      <department>Linen</department>
+      <duedate>February 24, 2024</duedate>
+      <employeename>IGNACIO, GINA B.</employeename>
+    </record>
+    <record index="72">
+      <amount> 2,507.85 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 17, 2024</duedate>
+      <employeename>ISIDRO, MARK ANTHONY, C</employeename>
+    </record>
+    <record index="73">
+      <amount> 2,556.90 </amount>
+      <department>Linen</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>JACKIELYN LARIN</employeename>
+    </record>
+    <record index="74">
+      <amount> 3,935.70 </amount>
+      <department>OPD</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>JAMES PHILIP BAYANI</employeename>
+    </record>
+    <record index="75">
+      <amount> 1,516.05 </amount>
+      <department>Central Supply</department>
+      <duedate>February 16, 2024</duedate>
+      <employeename>JANE GLENICE ANDRES</employeename>
+    </record>
+    <record index="76">
+      <amount> 3,639.60 </amount>
+      <department>MIS</department>
+      <duedate>February 04, 2024</duedate>
+      <employeename>JAVIER, KRISTINE MARIAH V.</employeename>
+    </record>
+    <record index="77">
+      <amount> 934.20 </amount>
+      <department>Accounting</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>JOHNMAR HOMO</employeename>
+    </record>
+    <record index="78">
+      <amount> 4,015.80 </amount>
+      <department>Radiology</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>JUANEZA, MERYLLE JOYCE J.</employeename>
+    </record>
+    <record index="79">
+      <amount> 1,809.90 </amount>
+      <department>Radiology</department>
+      <duedate>February 18, 2024</duedate>
+      <employeename>JULIET MENARDO</employeename>
+    </record>
+    <record index="80">
+      <amount> 2,789.55 </amount>
+      <department>MIS</department>
+      <duedate>February 26, 2024</duedate>
+      <employeename>KRISSY GAYLE SAN DIEGO</employeename>
+    </record>
+    <record index="81">
+      <amount> 1,838.25 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>KYLA PARALES</employeename>
+    </record>
+    <record index="82">
+      <amount> 1,544.85 </amount>
+      <department>Linen</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>LANDAO, MARY JOY T.</employeename>
+    </record>
+    <record index="83">
+      <amount> 3,739.95 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 04, 2024</duedate>
+      <employeename>LAURENTE, PRINCESS MAE, CHAVES</employeename>
+    </record>
+    <record index="84">
+      <amount> 4,450.05 </amount>
+      <department>MIS</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>LAYSON, KARL STEPHAN G.</employeename>
+    </record>
+    <record index="85">
+      <amount> 2,622.60 </amount>
+      <department>Linen</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>LAZARO, RHOZZWELL JAMAE E.</employeename>
+    </record>
+    <record index="86">
+      <amount> 942.75 </amount>
+      <department>Security</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>LIGO, ANNICIA MARIE B.</employeename>
+    </record>
+    <record index="87">
+      <amount> 3,196.80 </amount>
+      <department>MIS</department>
+      <duedate>February 08, 2024</duedate>
+      <employeename>MACALINO, JANE C.</employeename>
+    </record>
+    <record index="88">
+      <amount> 1,903.50 </amount>
+      <department>OPD</department>
+      <duedate>February 19, 2024</duedate>
+      <employeename>MALAGOTNOT, HILARIE, NUÑEZ</employeename>
+    </record>
+    <record index="89">
+      <amount> 876.60 </amount>
+      <department>Linen</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>MANGULABNAN, JOSE MIGUEL L.</employeename>
+    </record>
+    <record index="90">
+      <amount> 4,410.00 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>MAON, JULINA M.</employeename>
+    </record>
+    <record index="91">
+      <amount> 2,345.40 </amount>
+      <department>Accounting</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>MARCAYDA, JEREMIE T.</employeename>
+    </record>
+    <record index="92">
+      <amount> 4,275.90 </amount>
+      <department>Linen</department>
+      <duedate>February 19, 2024</duedate>
+      <employeename>MARCELO, MARIEL, M</employeename>
+    </record>
+    <record index="93">
+      <amount> 578.25 </amount>
+      <department>Canteen</department>
+      <duedate>February 25, 2024</duedate>
+      <employeename>MARIECRIS VASALLO</employeename>
+    </record>
+    <record index="94">
+      <amount> 1,939.50 </amount>
+      <department>Central Supply</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>MARY HEINZ CORONEL</employeename>
+    </record>
+    <record index="95">
+      <amount> 3,022.20 </amount>
+      <department>Information</department>
+      <duedate>February 25, 2024</duedate>
+      <employeename>MASIGLAT, JOYCE ANN S.</employeename>
+    </record>
+    <record index="96">
+      <amount> 3,444.30 </amount>
+      <department>Emergency</department>
+      <duedate>February 15, 2024</duedate>
+      <employeename>MATEO, DAERIS ANN C.</employeename>
+    </record>
+    <record index="97">
+      <amount> 2,448.90 </amount>
+      <department>Information</department>
+      <duedate>February 02, 2024</duedate>
+      <employeename>MELROS NEVAREZ</employeename>
+    </record>
+    <record index="98">
+      <amount> 3,924.90 </amount>
+      <department>Accounting</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>MEMPIN, LEALYN , D.</employeename>
+    </record>
+    <record index="99">
+      <amount> 4,143.60 </amount>
+      <department>Emergency</department>
+      <duedate>February 20, 2024</duedate>
+      <employeename>MENGOTE, CATHERINE, F.</employeename>
+    </record>
+    <record index="100">
+      <amount> 859.50 </amount>
+      <department>Laboratory</department>
+      <duedate>February 12, 2024</duedate>
+      <employeename>MIKAELLA MANGAHAS</employeename>
+    </record>
+    <record index="101">
+      <amount> 283.95 </amount>
+      <department>Linen</department>
+      <duedate>February 26, 2024</duedate>
+      <employeename>NAVALTA, SHARMINA S.</employeename>
+    </record>
+    <record index="102">
+      <amount> 2,583.45 </amount>
+      <department>Linen</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>NICOLE DAYRIT</employeename>
+    </record>
+    <record index="103">
+      <amount> 257.85 </amount>
+      <department>Linen</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>OROLFO, ENOJAY, O.</employeename>
+    </record>
+    <record index="104">
+      <amount> 3,755.70 </amount>
+      <department>Therapy</department>
+      <duedate>February 08, 2024</duedate>
+      <employeename>PARAISO, JONALYN M.</employeename>
+    </record>
+    <record index="105">
+      <amount> 3,547.35 </amount>
+      <department>Linen</department>
+      <duedate>February 10, 2024</duedate>
+      <employeename>PARALLAG, RONALD, C</employeename>
+    </record>
+    <record index="106">
+      <amount> 92.25 </amount>
+      <department>Security</department>
+      <duedate>February 26, 2024</duedate>
+      <employeename>PEREZ AILEENJOY J.</employeename>
+    </record>
+    <record index="107">
+      <amount> 3,960.00 </amount>
+      <department>Central Supply</department>
+      <duedate>February 10, 2024</duedate>
+      <employeename>PEREZ, SAMANTHA TRISHA M.</employeename>
+    </record>
+    <record index="108">
+      <amount> 3,293.55 </amount>
+      <department>Accounting</department>
+      <duedate>February 03, 2024</duedate>
+      <employeename>PINEDA, NICOLE ABIGAIL D.</employeename>
+    </record>
+    <record index="109">
+      <amount> 1,071.90 </amount>
+      <department>Security</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>PRELA, ROCHELLE, S</employeename>
+    </record>
+    <record index="110">
+      <amount> 4,006.80 </amount>
+      <department>Radiology</department>
+      <duedate>February 21, 2024</duedate>
+      <employeename>PRINCESS NAOMI ASPIRAS</employeename>
+    </record>
+    <record index="111">
+      <amount> 50.85 </amount>
+      <department>Information</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>PRONUEVO, KIM AUBREY V.</employeename>
+    </record>
+    <record index="112">
+      <amount> 2,134.35 </amount>
+      <department>Linen</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>QUIAMBAO, JERAISY M.</employeename>
+    </record>
+    <record index="113">
+      <amount> 2,616.75 </amount>
+      <department>Linen</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>RAIN JASMINE LUSTADO</employeename>
+    </record>
+    <record index="114">
+      <amount> 3,629.70 </amount>
+      <department>Accounting</department>
+      <duedate>February 22, 2024</duedate>
+      <employeename>RALPH RENNIEL REYES</employeename>
+    </record>
+    <record index="115">
+      <amount> 3,333.60 </amount>
+      <department>Laboratory</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>REGIE CRUZ</employeename>
+    </record>
+    <record index="116">
+      <amount> 1,606.05 </amount>
+      <department>Canteen</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>REGINE SANTOS</employeename>
+    </record>
+    <record index="117">
+      <amount> 793.80 </amount>
+      <department>Accounting</department>
+      <duedate>February 02, 2024</duedate>
+      <employeename>RESARE, CYRILLE D.</employeename>
+    </record>
+    <record index="118">
+      <amount> 2,762.10 </amount>
+      <department>Information</department>
+      <duedate>February 24, 2024</duedate>
+      <employeename>REYMATIAS, MA. ERICA R.</employeename>
+    </record>
+    <record index="119">
+      <amount> 2,462.40 </amount>
+      <department>MIS</department>
+      <duedate>February 24, 2024</duedate>
+      <employeename>REYNALYN PAGLINAWAN</employeename>
+    </record>
+    <record index="120">
+      <amount> 2,949.75 </amount>
+      <department>MIS</department>
+      <duedate>February 25, 2024</duedate>
+      <employeename>RULONA, ELAINE MAY A.</employeename>
+    </record>
+    <record index="121">
+      <amount> 3,310.65 </amount>
+      <department>Security</department>
+      <duedate>February 27, 2024</duedate>
+      <employeename>SADIE, MARJORIE C</employeename>
+    </record>
+    <record index="122">
+      <amount> 964.80 </amount>
+      <department>Therapy</department>
+      <duedate>February 06, 2024</duedate>
+      <employeename>SALAS,LYCA S.</employeename>
+    </record>
+    <record index="123">
+      <amount> 4,078.35 </amount>
+      <department>Laboratory</department>
+      <duedate>February 13, 2024</duedate>
+      <employeename>SALAYSAY, ROMA MAE F.</employeename>
+    </record>
+    <record index="124">
+      <amount> 4,093.20 </amount>
+      <department>Radiology</department>
+      <duedate>February 12, 2024</duedate>
+      <employeename>SALONGA, JENNIE RUTH, L.</employeename>
+    </record>
+    <record index="125">
+      <amount> 2,766.60 </amount>
+      <department>Security</department>
+      <duedate>February 12, 2024</duedate>
+      <employeename>SAN ROQUE, CIARA MAE D.</employeename>
+    </record>
+    <record index="126">
+      <amount> 377.10 </amount>
+      <department>Accounting</department>
+      <duedate>February 20, 2024</duedate>
+      <employeename>SANTOS, ALOHA M.</employeename>
+    </record>
+    <record index="127">
+      <amount> 954.45 </amount>
+      <department>Radiology</department>
+      <duedate>February 24, 2024</duedate>
+      <employeename>SIBAYAN, GELLI, CUDIA</employeename>
+    </record>
+    <record index="128">
+      <amount> 4,215.15 </amount>
+      <department>Laboratory</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>SIERVO, BIANCA, H.</employeename>
+    </record>
+    <record index="129">
+      <amount> 3,278.25 </amount>
+      <department>Linen</department>
+      <duedate>February 05, 2024</duedate>
+      <employeename>SILVERIO, IVY ANGELA DC.</employeename>
+    </record>
+    <record index="130">
+      <amount> 4,484.70 </amount>
+      <department>Accounting</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>STA. MARIA, ANNE KIMBERLY T</employeename>
+    </record>
+    <record index="131">
+      <amount> 556.20 </amount>
+      <department>Linen</department>
+      <duedate>February 12, 2024</duedate>
+      <employeename>SUMERA, JESSIE AIRA DC.</employeename>
+    </record>
+    <record index="132">
+      <amount> 246.15 </amount>
+      <department>Emergency</department>
+      <duedate>February 11, 2024</duedate>
+      <employeename>SUPAN, JERIC P.</employeename>
+    </record>
+    <record index="133">
+      <amount> 1,758.60 </amount>
+      <department>Radiology</department>
+      <duedate>February 21, 2024</duedate>
+      <employeename>TAMAYO, EDGARDO JOSE DG.</employeename>
+    </record>
+    <record index="134">
+      <amount> 3,722.40 </amount>
+      <department>Emergency</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>TARA, CHYNA MARIE E.</employeename>
+    </record>
+    <record index="135">
+      <amount> 1,562.85 </amount>
+      <department>Linen</department>
+      <duedate>February 28, 2024</duedate>
+      <employeename>VALENZUELA, ALLEN CHRISTIAN A.</employeename>
+    </record>
+    <record index="136">
+      <amount> 2,316.60 </amount>
+      <department>Security</department>
+      <duedate>February 19, 2024</duedate>
+      <employeename>VECES,PAULA MAE, MIJARES</employeename>
+    </record>
+    <record index="137">
+      <amount> 2,736.45 </amount>
+      <department>Laboratory</department>
+      <duedate>February 16, 2024</duedate>
+      <employeename>VELASCO, MARYLOU PAYUYO</employeename>
+    </record>
+    <record index="138">
+      <amount> 1,873.35 </amount>
+      <department>Central Supply</department>
+      <duedate>February 21, 2024</duedate>
+      <employeename>VERDADERO, MELANIE GRACE S.</employeename>
+    </record>
+    <record index="139">
+      <amount> 3,351.60 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>VIDAR,PETER PAUL C.</employeename>
+    </record>
+    <record index="140">
+      <amount> 3,137.40 </amount>
+      <department>Central Supply</department>
+      <duedate>February 21, 2024</duedate>
+      <employeename>VINUYA, RENZO G.</employeename>
+    </record>
+    <record index="141">
+      <amount> 1,205.10 </amount>
+      <department>Emergency</department>
+      <duedate>February 09, 2024</duedate>
+      <employeename>WATIWAT,MONIQUE JOY B.</employeename>
+    </record>
+    <record index="142">
+      <amount> 3,526.20 </amount>
+      <department>Nurse Station 5</department>
+      <duedate>February 14, 2024</duedate>
+      <employeename>WENDY MAE POMIDA</employeename>
+    </record>
+    <record index="143">
+      <amount> 3,505.05 </amount>
+      <department>Radiology</department>
+      <duedate>February 07, 2024</duedate>
+      <employeename>YAMBAO, JELREY ANN T.</employeename>
+    </record>
+    <record index="144">
+      <amount> 1,334.25 </amount>
+      <department>Security</department>
+      <duedate>February 03, 2024</duedate>
+      <employeename>YSABELLE ANNE DOMASIAN</employeename>
+    </record>
+  </records>
+</data>
