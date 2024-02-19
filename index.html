@@ -4,11 +4,48 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Due</title>
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-  </head>
+    <style>
+      h1 {
+        text-align: center;
+      }
 
-  <body>
+      #department-selection {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 200px;
+        margin-bottom: 20px;
+      }
+
+      label {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      table {
+        border-collapse: collapse;
+        border: 2px solid #000000;
+        font-family: Arial, sans-serif;
+        width: 100%;
+      }
+
+      table th,
+      table td {
+        padding: 10px;
+        font-size: 18px;
+        color: #2d3caf;
+        text-align: left;
+        border: 1px solid #000000;
+      }
+
+      table th {
+        background-color: #f0f0f0;
+      }
+    </style>
+  </head>
+  <body onload="getDues();">
     <h1>Company Employee Monthly Dues</h1>
 
     <label for="department-selection">Department:</label>
@@ -30,5 +67,60 @@
     </select>
 
     <table id="company"></table>
+
+    <script>
+      function getDues(department) {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+          if (this.readyState === 4 && this.status === 200) {
+            fillTable(this, department);
+          }
+        };
+        xhttp.open("GET", "companydue.xml", true);
+        xhttp.send();
+      }
+
+      function fillTable(xml, department) {
+        var i;
+        var xmlDoc = xml.responseXML;
+        var table =
+          "<tr><th>Employee Name</th><th>Department</th>" +
+          "<th>Due Date</th><th>Amount</th></tr>";
+        var x = xmlDoc.getElementsByTagName("record");
+        for (i = 0; i < x.length; i++) {
+          var recordDepartment = x[i]
+            .getElementsByTagName("department")[0]
+            .childNodes[0].nodeValue.toLowerCase();
+
+          //
+          if (
+            department.toLowerCase() === "all" ||
+            recordDepartment === department.toLowerCase()
+          ) {
+            table +=
+              "<tr><td>" +
+              x[i].getElementsByTagName("employeename")[0].childNodes[0]
+                .nodeValue +
+              "</td><td>" +
+              x[i].getElementsByTagName("department")[0].childNodes[0]
+                .nodeValue +
+              "</td><td>" +
+              x[i].getElementsByTagName("duedate")[0].childNodes[0].nodeValue +
+              "</td><td>" +
+              x[i].getElementsByTagName("amount")[0].childNodes[0].nodeValue +
+              "</td></tr>";
+          }
+        }
+        document.getElementById("company").innerHTML = table;
+      }
+
+      // Set the default to "all"
+      getDues("all");
+
+      // Add event listener for department selection changes
+      document.getElementById("department-selection").onchange = function () {
+        getDues(this.value); // Load data based on the selected department
+      };
+    </script>
   </body>
 </html>
