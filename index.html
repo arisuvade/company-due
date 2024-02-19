@@ -9,6 +9,11 @@
         text-align: center;
       }
 
+      label {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
       #department-selection {
         font-family: Arial, sans-serif;
         font-size: 16px;
@@ -19,11 +24,6 @@
         margin-bottom: 20px;
       }
 
-      label {
-        font-size: 24px;
-        font-weight: bold;
-      }
-
       table {
         border-collapse: collapse;
         border: 2px solid #000000;
@@ -31,17 +31,22 @@
         width: 100%;
       }
 
-      table th,
+      /* Employee Name, etc... */
+      table th {
+        padding: 18px;
+        font-size: 24px;
+        color: #f320b7;
+        background-color: #f0f0f0;
+        border: 3px solid #9a6e6e;
+      }
+
+      /* Data */
       table td {
         padding: 10px;
         font-size: 18px;
-        color: #2d3caf;
+        color: #0e27e1;
         text-align: left;
-        border: 1px solid #000000;
-      }
-
-      table th {
-        background-color: #f0f0f0;
+        border: 3px solid #9a6e6e;
       }
     </style>
   </head>
@@ -92,7 +97,6 @@
             .getElementsByTagName("department")[0]
             .childNodes[0].nodeValue.toLowerCase();
 
-          //
           if (
             department.toLowerCase() === "all" ||
             recordDepartment === department.toLowerCase()
