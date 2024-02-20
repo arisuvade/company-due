@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Company Due</title>
     <style>
+      /* Styling for full website  */
       body {
         font-family: Arial, sans-serif;
         background-color: #f8f8f8;
@@ -13,13 +14,15 @@
         margin-bottom: 5%;
       }
 
+      /* Styling for website title */
       h1 {
         text-align: center;
-        color: #6c5ce7;
+        color: #3e2eba;
         margin-top: 30px;
         margin-bottom: 30px;
       }
 
+      /* Styling for dropdown menu title */
       label {
         font-size: 18px;
         font-weight: bold;
@@ -27,31 +30,29 @@
         padding-left: 5%;
         margin-bottom: 10px;
       }
-
+      /* Styling for dropdown menu department selection */
       select {
         font-size: 16px;
         padding: 8px;
         border-radius: 5px;
-        border: 1px solid #ccc;
+        border: 2px solid #3e2eba;
         margin-bottom: 20px;
         color: #444;
         display: inline-block;
       }
 
+      /* Styling for group information */
       #group-info {
         background-color: #f8f8f8;
         padding: 20px;
         border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         text-align: center;
       }
-
       h2 {
-        color: #6c5ce7;
-        font-size: 28px;
+        color: #3e2eba;
+        font-size: 400%;
         margin-bottom: 20px;
       }
-
       ul {
         list-style-type: none;
         padding-left: 0;
@@ -60,28 +61,29 @@
       li {
         margin-bottom: 10px;
         color: #333;
-        font-size: 20px;
+        font-size: 200%;
       }
 
+      /* Styling for full table */
       table {
         border-collapse: collapse;
-        border: 2px solid #6c5ce7;
+        border: 2px solid #3e2eba;
         font-family: Arial, sans-serif;
         width: 90%;
         margin: 0 auto;
         background-color: #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
-
+      /* Styling for table header */
       table th {
         padding: 14px;
         font-size: 16px;
         color: #fff;
-        background-color: #6c5ce7;
-        border: 1px solid #6c5ce7;
+        background-color: #3e2eba;
+        border: 1px solid #3e2eba;
         text-align: left;
       }
-
+      /* Styling for table data */
       table td {
         padding: 10px;
         font-size: 14px;
@@ -91,11 +93,15 @@
     </style>
   </head>
   <body onload="getDues();">
+    <!-- Website title -->
     <h1>Company Employee Monthly Dues</h1>
 
+    <!-- Dropdown menu for department selection -->
     <label for="department-selection">Department:</label>
     <select id="department-selection">
+      <!-- Default option -->
       <option style="display: none">Choose Department</option>
+      <!-- All selections -->
       <option value="all">All Departments</option>
       <option value="central supply">Central Supply</option>
       <option value="security">Security</option>
@@ -112,6 +118,7 @@
       <option value="information">Information</option>
     </select>
 
+    <!-- Group information -->
     <div id="group-info">
       <h2>GROUP CATERPILLARS</h2>
       <ul>
@@ -139,28 +146,33 @@
       function fillTable(xml, department) {
         var i;
         var xmlDoc = xml.responseXML;
-        var table = "";
+        var table = ""; // Initialize table and to not show any table header  in the start up
         var x = xmlDoc.getElementsByTagName("record");
 
+        // Loop each record
         for (i = 0; i < x.length; i++) {
+          // Get department of the current record
           var recordDepartment = x[i]
             .getElementsByTagName("department")[0]
             .childNodes[0].nodeValue.toLowerCase();
 
+          // Check if the department matches the selected department or if "All Departments" is selected
           if (
             department &&
-            (department === "all" ||
+            (department === "all" || // Include All Departments on departments selection
               recordDepartment === department.toLowerCase())
           ) {
-            //  Hide group info
+            //  Hide group info after selecting a department
             document.getElementById("group-info").style.display = "none";
 
+            // Put table headers after selecting a department
             if (table === "") {
               table +=
                 "<tr><th>Employee Name</th><th>Department</th>" +
                 "<th>Due Date</th><th>Amount</th></tr>";
             }
 
+            // Put table data depending on the department
             table +=
               "<tr><td>" +
               x[i].getElementsByTagName("employeename")[0].childNodes[0]
@@ -176,7 +188,10 @@
           }
         }
 
+        // Display the table
         document.getElementById("company").innerHTML = table;
+
+        // Change the table based on the selected department
         document.getElementById("department-selection").onchange = function () {
           getDues(this.value);
         };
