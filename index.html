@@ -135,11 +135,11 @@
       function getDues() {
         // Create a new XMLHttpRequest object
         var xhttp = new XMLHttpRequest();
-        // Define a function to be executed when the readyState changes
+        // Executed when the readyState changes
         xhttp.onreadystatechange = function () {
           // Check if the request is done and successful
           if (this.readyState === 4 && this.status === 200) {
-            // Call the fillTable function with the response data and the selected department
+            // Call the fillTable function to update
             fillTable(
               this,
               document.getElementById("department-selection").value
@@ -165,11 +165,10 @@
             .getElementsByTagName("department")[0]
             .childNodes[0].nodeValue.toLowerCase();
 
-          // Check if the department matches the selected department or if "All Departments" is selected
+          // Check if the user pick a department
           if (
-            department &&
-            (department === "all" || // Include All Departments on departments selection
-              recordDepartment === department.toLowerCase())
+            department === "all" ||
+            recordDepartment === department.toLowerCase()
           ) {
             //  Hide group info after selecting a department
             document.getElementById("group-info").style.display = "none";
@@ -200,7 +199,7 @@
         // Display the table
         document.getElementById("company").innerHTML = table;
 
-        // Run getDues again
+        // Run getDues again to update
         getDues();
       }
     </script>
