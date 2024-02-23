@@ -28,7 +28,7 @@
         font-weight: bold;
         color: #555;
         padding-left: 5%;
-        margin-bottom: 10px;
+        margin-bottom: 30px;
       }
       /* Styling for dropdown menu department selection */
       select {
@@ -36,7 +36,7 @@
         padding: 8px;
         border-radius: 5px;
         border: 2px solid #3e2eba;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
         color: #444;
         display: inline-block;
       }
@@ -45,7 +45,6 @@
       #group-info {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
         background-color: #f8f8f8;
-        padding: 20px;
         border-radius: 8px;
         text-align: center;
       }
@@ -54,10 +53,8 @@
         font-size: 500%;
       }
       ul {
-        list-style-type: none;
         padding-left: 0;
       }
-
       li {
         margin-bottom: 10px;
         color: #333;
@@ -135,14 +132,23 @@
     <table id="company"></table>
 
     <script>
-      function getDues(department) {
+      function getDues() {
+        // Create a new XMLHttpRequest object
         var xhttp = new XMLHttpRequest();
+        // Define a function to be executed when the readyState changes
         xhttp.onreadystatechange = function () {
+          // Check if the request is done and successful
           if (this.readyState === 4 && this.status === 200) {
-            fillTable(this, department);
+            // Call the fillTable function with the response data and the selected department
+            fillTable(
+              this,
+              document.getElementById("department-selection").value
+            );
           }
         };
+        // Open the request with the GET method and the XML file URL
         xhttp.open("GET", "companydue.xml", true);
+        // Send the request
         xhttp.send();
       }
 
@@ -194,10 +200,8 @@
         // Display the table
         document.getElementById("company").innerHTML = table;
 
-        // Change the table based on the selected department
-        document.getElementById("department-selection").onchange = function () {
-          getDues(this.value);
-        };
+        // Run getDues again
+        getDues();
       }
     </script>
   </body>
