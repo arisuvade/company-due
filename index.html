@@ -168,7 +168,7 @@
             recordDepartment === department.toLowerCase()
           ) {
             //  Hide group info after selecting a department
-            document.getElementById("group-info").style.display = "none";
+            document.getElementById("group-info").hidden = "none";
 
             // Put table headers after selecting a department
             if (table === "") {
@@ -196,7 +196,7 @@
         // Display the table
         document.getElementById("company").innerHTML = table;
 
-        // Run getDues again to update
+        // Call getDues again to update
         getDues();
       }
     </script>
