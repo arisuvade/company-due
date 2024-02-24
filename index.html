@@ -22,15 +22,15 @@
         margin-bottom: 30px;
       }
 
-      /* Dropdown menu title */
-      label {
+      /* Department selection label */
+      #department-selection label {
         font-size: 18px;
         font-weight: bold;
         color: #333;
         padding-left: 5%;
       }
-      /* Dropdown menu department selection */
-      select {
+      /*  Department selection selection */
+      #department-selection select {
         font-size: 16px;
         padding: 8px;
         border-radius: 8px;
@@ -94,26 +94,28 @@
     <h1>Company Employee Monthly Dues</h1>
 
     <!-- Dropdown menu for department selection -->
-    <label for="department-selection">Department:</label>
-    <select id="department-selection">
-      <!-- Placeholder -->
-      <option hidden>Choose Department</option>
-      <!-- All selections -->
-      <option value="all">All Departments</option>
-      <option value="central supply">Central Supply</option>
-      <option value="security">Security</option>
-      <option value="laboratory">Laboratory</option>
-      <option value="mis">MIS</option>
-      <option value="therapy">Therapy</option>
-      <option value="linen">Linen</option>
-      <option value="opd">OPD</option>
-      <option value="nurse station 5">Nurse Station 5</option>
-      <option value="accounting">Accounting</option>
-      <option value="radiology">Radiology</option>
-      <option value="emergency">Emergency</option>
-      <option value="canteen">Canteen</option>
-      <option value="information">Information</option>
-    </select>
+    <div id="department-selection">
+      <label for="departments">Department:</label>
+      <select id="departments">
+        <!-- Placeholder -->
+        <option hidden>Choose Department</option>
+        <!-- All selections -->
+        <option value="all">All Departments</option>
+        <option value="central supply">Central Supply</option>
+        <option value="security">Security</option>
+        <option value="laboratory">Laboratory</option>
+        <option value="mis">MIS</option>
+        <option value="therapy">Therapy</option>
+        <option value="linen">Linen</option>
+        <option value="opd">OPD</option>
+        <option value="nurse station 5">Nurse Station 5</option>
+        <option value="accounting">Accounting</option>
+        <option value="radiology">Radiology</option>
+        <option value="emergency">Emergency</option>
+        <option value="canteen">Canteen</option>
+        <option value="information">Information</option>
+      </select>
+    </div>
 
     <!-- Group information -->
     <div id="group-info">
@@ -137,10 +139,7 @@
           // Check if the request is done and successful
           if (this.readyState === 4 && this.status === 200) {
             // Call the fillTable function to update
-            fillTable(
-              this,
-              document.getElementById("department-selection").value
-            );
+            fillTable(this, document.getElementById("departments").value);
           }
         };
         // Open the request with the GET method and the XML file URL
