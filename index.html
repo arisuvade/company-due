@@ -155,11 +155,15 @@
       }
 
       function fillTable(xml, department) {
-        var i;
+        // Get the array of xmlDoc
         var xmlDoc = xml.responseXML;
-        var table = ""; // Initialize table and to not show any table header  in the start up
+        // Initialize table and to not show any table header  in the start up
+        var table = "";
+        // Get the data from the record
         var x = xmlDoc.getElementsByTagName("record");
 
+        // Counter for forloop
+        var i;
         // Loop each record
         for (i = 0; i < x.length; i++) {
           // Get department of the current record
